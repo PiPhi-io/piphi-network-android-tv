@@ -2,9 +2,9 @@
   "$schema": "./schema/piphi-manifest.schema.json",
   "manifest_version": "1.0",
   "id": "piphi-network-android-tv",
-  "name": "Piphi Network Android Tv",
+  "name": "Android TV",
   "version": "0.1.0",
-  "description": "PiPhi starter runtime for Android TV and Fire TV devices through a managed ADB service.",
+  "description": "Monitor and control Android TV, Google TV, and Fire TV devices through managed ADB.",
   "metadata": {
     "generator": "piphi-network-create",
     "scaffold_version": "0.3.0",
@@ -133,5 +133,63 @@
         "default_widget": "tile"
       }
     }
-  ]
+  ],
+  "marketplace": {
+    "metadata_version": 2,
+    "display_name": "Android TV",
+    "summary": "Monitor and control Android TV, Google TV, and Fire TV devices through managed ADB.",
+    "category": "media",
+    "regions": [
+      "WW"
+    ],
+    "languages": [
+      "en"
+    ],
+    "publisher": {
+      "name": "PiPhi Network",
+      "website_url": "https://piphi.io",
+      "support_url": "https://github.com/PiPhi-io/piphi-network-android-tv/issues",
+      "security_contact": "support@piphi.io"
+    },
+    "access": [
+      {
+        "id": "local_network",
+        "label": "Local network access",
+        "reason": "Discovers or communicates with supported services and devices on the homeowner's local network.",
+        "required": true
+      }
+    ],
+    "compatibility": [
+      {
+        "brand": "Google and Amazon",
+        "model": "Android TV, Google TV, and Fire TV devices with ADB enabled"
+      }
+    ],
+    "documentation_url": "https://github.com/PiPhi-io/piphi-network-android-tv",
+    "support_url": "https://github.com/PiPhi-io/piphi-network-android-tv/issues",
+    "changelog_url": "https://github.com/PiPhi-io/piphi-network-android-tv/releases",
+    "quality_tier": "unrated",
+    "governance": {
+      "schema_version": 1,
+      "publication_status": "draft",
+      "rollout_percent": 0,
+      "lifecycle_status": "active",
+      "qualification": {
+        "status": "unverified"
+      }
+    },
+    "device_types": [
+      "television",
+      "streaming device"
+    ],
+    "protocols": [
+      "ADB"
+    ],
+    "discovery_methods": [
+      "managed ADB discovery",
+      "manual"
+    ],
+    "connectivity": "local",
+    "offline_support": "full"
+  }
 }
