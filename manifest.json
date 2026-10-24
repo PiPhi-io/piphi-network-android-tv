@@ -200,5 +200,8 @@
     ],
     "connectivity": "local",
     "offline_support": "full"
+  },
+  "onboarding": {
+    "mode": "discovery"
   }
 }
